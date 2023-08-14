@@ -48,7 +48,7 @@ const User = () => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:8080/api/events")
+      .get("https://calendar-task.onrender.com/api/events")
       .then((res) => setValue(res.data))
       .catch((err) => console.error);
   }, []);

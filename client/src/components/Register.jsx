@@ -14,7 +14,7 @@ const Register = () => {
 
     const handelSubmit=(e)=>{
         e.preventDefault();
-        axios.post("http://localhost:8080/api/user",{username,password,usertype})
+        axios.post("https://calendar-task.onrender.com/api/user",{username,password,usertype})
         .then((res)=>{
             console.log(res)
         })
